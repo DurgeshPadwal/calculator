@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: cadetblue;
+            color: black;
+            text-align: center;
+        }
+        button{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    Enter First Number:-<input type="number" id="t1"><br><br>
+    Enter second Number:-<input type="number" id="t2"><br><br>
+    <button onclick="Add()">+</button>
+    <button onclick="Sub()">-</button>
+    <button onclick="Mul()">x</button>
+    <button onclick="Div()">/</button>
+
+    <p id="ans">Answer = ?</p>
+</body>
+<script>
+    function Add() {
+    num1 = Number(document.getElementById("t1").value);
+    num2 = Number(document.getElementById("t2").value);
+    num3 = num1 + num2;
+    document.getElementById("ans").innerHTML = "Addition is " + num3
+}
+
+function Sub() {
+    num1 = Number(document.getElementById("t1").value);
+    num2 = Number(document.getElementById("t2").value);
+    num3 = num1 - num2;
+    document.getElementById("ans").innerHTML = "Subtrecation is " + num3
+}
+
+function Mul() {
+    num1 = Number(document.getElementById("t1").value);
+    num2 = Number(document.getElementById("t2").value);
+    num3 = num1 * num2;
+    document.getElementById("ans").innerHTML = "Mul is " + num3
+}
+
+function Div() {
+    num1 = Number(document.getElementById("t1").value);
+    num2 = Number(document.getElementById("t2").value);
+    num3 = num1 / num2;
+    document.getElementById("ans").innerHTML = "Div is " + num3
+}
+</script>
+</html>
